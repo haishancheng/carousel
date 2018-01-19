@@ -1,0 +1,100 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+/* common css */
+clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+
+}
+
+/*----------------------*/
+.carousel {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+.carousel .img-ct {
+  position: absolute;
+}
+.carousel .img-ct > li {
+  float: left;
+}
+
+.carousel .img-ct img {
+  width: 400px;
+  height: 250px;
+}
+
+.carousel .arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  border:1px solid #fff;
+}
+.carousel .arrow:hover {
+  opacity: 0.6;
+}
+.carousel .pre {
+  left: 10px;
+}
+.carousel .next {
+  right: 10px;
+}
+.carousel .bullet{
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, 0);
+}
+.carousel .bullet>li{
+  float: left;
+  width: 40px;
+  height: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin:0 5px;
+  cursor: pointer;
+}
+.carousel .bullet>li:hover{
+  opacity: 0.6;
+}
+.carousel .bullet>li.active{
+  background: #ccc;
+}
+.carousel .auto-play{
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  padding: 2px 5px;
+  background: rgb(233, 104, 107);
+  border:1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 1px 1px 0 0;
+}
+.carousel .auto-play:hover{
+  background: #e80000;
+}
+.carousel .stop-auto-play{
+  margin-left: 190px;
+}
